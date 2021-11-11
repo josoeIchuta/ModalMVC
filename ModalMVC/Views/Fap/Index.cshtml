@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "lista FAP page";
+}
+
+<h1> Hola soy la pagina para la lista de FAP</h1>
+
+@*<a class="btn btn-primary" asp-controller="Fap" asp-action="DetalleDeuda">Detalle</a>*@
+@*<a class="btn btn-primary" onclick="showInPopup('@Url.Action("AddOrEdit","Transaction",new {id=item.TransactionId},Context.Request.Scheme)','Update Transaction')">Detalle</a>*@
+<a class="btn btn-primary" onclick="showInPopup('@Url.Action("DetalleDeuda","Fap",null,Context.Request.Scheme)','Update Transaction')">Detalle</a>
